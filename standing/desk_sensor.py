@@ -6,14 +6,14 @@ import os
 ## set GPIO mode to BCM
 ## this takes GPIO number instead of pin number
 io.setmode(io.BCM)
- 
+
 ## enter the number of whatever GPIO pin you're using
-desk_pin = 22 
- 
+desk_pin = 22
+
 ## use the built-in pull-up resistor
 io.setup(desk_pin, io.IN, pull_up_down=io.PUD_UP)  # activate input with PullUp
- 
-## initialize desk 
+
+## initialize desk
 desk = 0
 standing_sec = 60
 standing_min = 0
